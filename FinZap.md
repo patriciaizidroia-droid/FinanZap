@@ -1,7 +1,7 @@
 <div align="center">
 
 # 💸 FinanZap
-
+Patrícia Unifacisa — Engenharia de Prompt + Vibe Coding, 2026
 ### Controle financeiro pessoal pelo WhatsApp com dashboard inteligente
 
 ![Badge](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
@@ -39,6 +39,58 @@ parte da rotina diária — e visualizar tudo organizado em um dashboard intelig
 
 ---
 
+## 👤 Personas
+
+### Persona 1 — Ana, 32 anos
+
+- **Ocupação:** Professora
+- **Perfil:** Mãe de dois filhos, rotina agitada entre escola e casa
+- **Dores:**
+  - Esquece de anotar os gastos no dia a dia
+  - Não sabe para onde vai o dinheiro no fim do mês
+  - Já tentou usar planilhas e apps, mas abandona em poucos dias
+- **Objetivos:**
+  - Entender onde está gastando mais
+  - Conseguir economizar para uma viagem de férias
+  - Ter uma visão clara dos gastos com os filhos
+- **Frase:** *"Eu sei que gasto demais, mas nunca sei exatamente onde."*
+
+---
+
+### Persona 2 — Carlos, 41 anos
+
+- **Ocupação:** Autônomo / Prestador de serviços
+- **Perfil:** Renda variável, mistura gastos pessoais com os do trabalho
+- **Dores:**
+  - Dificuldade em separar gastos pessoais dos profissionais
+  - Não tem tempo para aprender um app financeiro novo
+  - Sente que o dinheiro "some" sem explicação
+- **Objetivos:**
+  - Ter visão clara dos gastos mensais
+  - Controlar combustível e alimentação (maiores despesas)
+  - Usar uma ferramenta simples, que não exija aprendizado
+- **Frase:** *"Se puder resolver no WhatsApp, eu uso. App novo eu não abro."*
+
+---
+
+## 💡 Proposta de Valor
+
+> **"Controle financeiro sem sair do WhatsApp."**
+
+O usuário digita naturalmente *"Gastei R$ 150 no mercado"* e o sistema
+categoriza, armazena e exibe tudo em um dashboard visual — sem formulários,
+sem apps extras, sem fricção.
+
+### Diferenciais
+
+- ✅ **Zero fricção** — usa o WhatsApp que já conhece
+- ✅ **Categorização automática** com Inteligência Artificial
+- ✅ **Dashboard mensal e anual** com gráficos visuais
+- ✅ **Alertas inteligentes** de gastos excessivos por categoria
+- ✅ **Gamificação** para criar o hábito de registrar despesas
+
+---
+
 ## ✨ Funcionalidades
 
 ### 🤖 Bot WhatsApp
@@ -66,6 +118,4 @@ parte da rotina diária — e visualizar tudo organizado em um dashboard intelig
 - [x] JWT para sessões seguras
 
 ---
-
-## 🏗️ Arquitetura do Sistema
 
