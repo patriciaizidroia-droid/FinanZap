@@ -1,121 +1,216 @@
 <div align="center">
 
 # 💸 FinanZap
-Patrícia Unifacisa — Engenharia de Prompt + Vibe Coding, 2026
-### Controle financeiro pessoal pelo WhatsApp com dashboard inteligente
 
-![Badge](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
-![Badge](https://img.shields.io/badge/Versão-1.0.0-blue)
-![Badge](https://img.shields.io/badge/Licença-MIT-green)
-![Badge](https://img.shields.io/badge/Node.js-Backend-brightgreen)
-![Badge](https://img.shields.io/badge/React-Frontend-61DAFB)
-![Badge](https://img.shields.io/badge/WhatsApp-Evolution%20API-25D366)
-
-</div>
-
----
+### Controle financeiro pessoal pelo WhatsApp com IA
 
 ## 📌 Sobre o Projeto
 
-O **FinanZap** é uma aplicação de controle financeiro pessoal que permite ao usuário
-registrar suas despesas diretamente pelo **WhatsApp**, sem precisar abrir nenhum app
-adicional. As despesas são categorizadas automaticamente por **Inteligência Artificial**
-e exibidas em um **dashboard visual** com gráficos mensais e anuais.
+O **FinanZap** é um sistema de controle financeiro pessoal que permite registrar despesas
+diretamente pelo **WhatsApp**, utilizando **Inteligência Artificial para interpretar
+mensagens em linguagem natural**.
 
-> 💡 Projeto desenvolvido como Projeto Integrador da disciplina de
-> **Engenharia de Prompt + Vibe Coding** — Unifacisa, 2026.
-> Professor: Jair Cavalcante
+A aplicação transforma mensagens simples enviadas pelo usuário em **registros estruturados
+de despesas**, exibidos posteriormente em um **dashboard financeiro inteligente**.
+
+**Exemplo de mensagem enviada pelo usuário:**
+
+```
+gastei 45 reais no almoço hoje
+```
+
+**Resposta processada pela IA:**
+
+```json
+{
+  "valor": 45.00,
+  "categoria": "alimentação",
+  "descricao": "almoço",
+  "data": "2026-03-15"
+}
+```
+
+Esses dados são armazenados e apresentados em gráficos e relatórios financeiros.
 
 ---
 
-## 🎯 Problema que Resolve
+## 🎯 Problema
 
-Pessoas têm dificuldade em controlar seus gastos pessoais porque os aplicativos
-financeiros tradicionais exigem disciplina para abrir um app separado e preencher
-formulários. O resultado é o **descontrole financeiro no fim do mês**.
+Grande parte das pessoas não controla seus gastos porque:
 
-**A solução:** Registrar despesas de forma natural pelo WhatsApp — canal que já faz
-parte da rotina diária — e visualizar tudo organizado em um dashboard inteligente.
+- aplicativos financeiros exigem disciplina para abrir
+- registrar despesas manualmente é cansativo
+- planilhas são abandonadas rapidamente
+
+Como resultado, muitos usuários perdem o controle financeiro ao longo do mês.
+
+---
+
+## 💡 Solução
+
+O **FinanZap** resolve esse problema utilizando um canal que as pessoas já usam
+diariamente: o **WhatsApp**.
+
+- O usuário simplesmente envia uma mensagem como se estivesse conversando
+- A IA interpreta a mensagem, extrai os dados e registra automaticamente a despesa
 
 ---
 
 ## 👤 Personas
 
-### Persona 1 — Ana, 32 anos
+### Persona 1 — Ana (28 anos)
 
-- **Ocupação:** Professora
-- **Perfil:** Mãe de dois filhos, rotina agitada entre escola e casa
-- **Dores:**
-  - Esquece de anotar os gastos no dia a dia
-  - Não sabe para onde vai o dinheiro no fim do mês
-  - Já tentou usar planilhas e apps, mas abandona em poucos dias
-- **Objetivos:**
-  - Entender onde está gastando mais
-  - Conseguir economizar para uma viagem de férias
-  - Ter uma visão clara dos gastos com os filhos
-- **Frase:** *"Eu sei que gasto demais, mas nunca sei exatamente onde."*
+| | |
+|---|---|
+| **Perfil** | Profissional autônoma que trabalha majoritariamente pelo WhatsApp |
+| **Problema** | Esquece de registrar despesas nos aplicativos financeiros |
+| **Solução** | Registrar gastos sem sair do WhatsApp |
 
----
+### Persona 2 — Carlos (35 anos)
 
-### Persona 2 — Carlos, 41 anos
-
-- **Ocupação:** Autônomo / Prestador de serviços
-- **Perfil:** Renda variável, mistura gastos pessoais com os do trabalho
-- **Dores:**
-  - Dificuldade em separar gastos pessoais dos profissionais
-  - Não tem tempo para aprender um app financeiro novo
-  - Sente que o dinheiro "some" sem explicação
-- **Objetivos:**
-  - Ter visão clara dos gastos mensais
-  - Controlar combustível e alimentação (maiores despesas)
-  - Usar uma ferramenta simples, que não exija aprendizado
-- **Frase:** *"Se puder resolver no WhatsApp, eu uso. App novo eu não abro."*
+| | |
+|---|---|
+| **Perfil** | Funcionário CLT com família e despesas mensais fixas |
+| **Problema** | Já tentou planilhas financeiras, mas abandona após algumas semanas |
+| **Solução** | Visualizar gastos através de gráficos simples e automáticos |
 
 ---
 
-## 💡 Proposta de Valor
+## 🤖 Persona da IA
 
-> **"Controle financeiro sem sair do WhatsApp."**
+A IA do sistema atua como um **analista financeiro automatizado**.
 
-O usuário digita naturalmente *"Gastei R$ 150 no mercado"* e o sistema
-categoriza, armazena e exibe tudo em um dashboard visual — sem formulários,
-sem apps extras, sem fricção.
+| | |
+|---|---|
+| **Papel** | Interpretar mensagens enviadas pelos usuários e extrair informações estruturadas |
 
-### Diferenciais
+**Funções:**
+- identificar valores monetários
+- identificar categorias de despesas
+- extrair descrição do gasto
+- identificar datas relativas
 
-- ✅ **Zero fricção** — usa o WhatsApp que já conhece
-- ✅ **Categorização automática** com Inteligência Artificial
-- ✅ **Dashboard mensal e anual** com gráficos visuais
-- ✅ **Alertas inteligentes** de gastos excessivos por categoria
-- ✅ **Gamificação** para criar o hábito de registrar despesas
+**Características — a IA deve:**
+- responder de forma objetiva
+- retornar apenas JSON
+- não inventar valores
+- não adicionar texto extra
 
 ---
 
-## ✨ Funcionalidades
+## 🧠 Engenharia de Prompt
+
+A classificação das despesas utiliza **prompt estruturado**.
+
+### Prompt principal
+
+```
+Você é um assistente que extrai dados financeiros de mensagens de usuários.
+
+Sua tarefa é analisar a mensagem e retornar um JSON com:
+- valor
+- categoria
+- descricao
+- data
+
+Categorias possíveis:
+alimentação | transporte | moradia | lazer | compras | saúde | educação | outros
+
+Mensagem do usuário:
+{mensagem}
+```
+
+---
+
+## ⚡ Vibe Coding
+
+O desenvolvimento do projeto utilizou **IA generativa como assistente de programação**.
+
+**Fluxo de desenvolvimento:**
+
+```
+Ideia → Prompt para IA → Geração de código → Revisão humana → Refinamento → Código final
+```
+
+**Ferramentas utilizadas:**
+
+| Ferramenta | Uso |
+|---|---|
+| ChatGPT | Geração de código e debugging |
+| Claude | Revisão e refatoração |
+| GitHub Copilot | Sugestões em tempo real no editor |
+| v0.dev | Prototipação visual do dashboard |
+
+**A IA foi utilizada para:**
+- geração de endpoints
+- criação de componentes React
+- geração de queries SQL
+- revisão de código
+
+> ⚠️ Todo código gerado foi **revisado manualmente** antes de ser aceito no projeto.
+
+---
+
+## 🏗️ Arquitetura do Sistema
+
+```
+Usuário
+   │
+   ▼
+WhatsApp
+   │
+   ▼
+Evolution API
+   │
+   ▼
+Backend Node.js
+   │
+   ▼
+OpenAI API
+   │
+   ▼
+Supabase (PostgreSQL)
+   │
+   ▼
+Dashboard React
+```
+
+---
+
+## 🔁 Fluxo de Funcionamento
+
+```
+1. Usuário envia mensagem no WhatsApp
+         ↓
+2. Webhook recebe a mensagem
+         ↓
+3. Backend envia mensagem para OpenAI
+         ↓
+4. IA extrai dados estruturados (JSON)
+         ↓
+5. Dados são armazenados no Supabase
+         ↓
+6. Dashboard atualiza gráficos em tempo real
+```
+
+---
+
+## 📊 Funcionalidades
 
 ### 🤖 Bot WhatsApp
-- [x] Receber mensagens com despesas em linguagem natural
-- [x] Categorização automática com IA
-- [x] Confirmação do registro via resposta no WhatsApp
-- [x] Consultas rápidas ("Quanto gastei esse mês?")
-- [x] Alertas de gastos excessivos por categoria
+- [x] Registrar despesas via mensagem natural
+- [x] Responder consultas ("Quanto gastei esse mês?")
+- [x] Alertar gastos excessivos por categoria
+- [x] Confirmar registros ao usuário
 
-### 📊 Dashboard Web
-- [x] Resumo mensal e anual de gastos
-- [x] Gráfico de pizza por categoria
-- [x] Gráfico de barras mês a mês
+### 📈 Dashboard Web
+- [x] Gráfico de gastos por categoria
+- [x] Gastos por mês (barras)
+- [x] Histórico completo de despesas
 - [x] Filtros por período e categoria
-- [x] Indicador do maior gasto do mês
-- [x] Histórico completo de transações
 
 ### 🎮 Gamificação
 - [x] Sistema de XP por registros consistentes
 - [x] Níveis financeiros (Iniciante → Expert)
 - [x] Conquistas e recompensas
-
-### 🔐 Autenticação
-- [x] Login por número de telefone
-- [x] JWT para sessões seguras
-
----
 
