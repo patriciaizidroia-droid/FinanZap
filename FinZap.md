@@ -4,6 +4,10 @@
 
 ### Controle financeiro pessoal pelo WhatsApp com IA
 
+</div>
+
+---
+
 ## 📌 Sobre o Projeto
 
 O **FinanZap** é um sistema de controle financeiro pessoal que permite registrar despesas
@@ -38,9 +42,9 @@ Esses dados são armazenados e apresentados em gráficos e relatórios financeir
 
 Grande parte das pessoas não controla seus gastos porque:
 
-- aplicativos financeiros exigem disciplina para abrir
-- registrar despesas manualmente é cansativo
-- planilhas são abandonadas rapidamente
+- Aplicativos financeiros exigem disciplina para abrir
+- Registrar despesas manualmente é cansativo
+- Planilhas são abandonadas rapidamente
 
 Como resultado, muitos usuários perdem o controle financeiro ao longo do mês.
 
@@ -85,16 +89,16 @@ A IA do sistema atua como um **analista financeiro automatizado**.
 | **Papel** | Interpretar mensagens enviadas pelos usuários e extrair informações estruturadas |
 
 **Funções:**
-- identificar valores monetários
-- identificar categorias de despesas
-- extrair descrição do gasto
-- identificar datas relativas
+- Identificar valores monetários
+- Identificar categorias de despesas
+- Extrair descrição do gasto
+- Identificar datas relativas
 
 **Características — a IA deve:**
-- responder de forma objetiva
-- retornar apenas JSON
-- não inventar valores
-- não adicionar texto extra
+- Responder de forma objetiva
+- Retornar apenas JSON
+- Não inventar valores
+- Não adicionar texto extra
 
 ---
 
@@ -142,10 +146,10 @@ Ideia → Prompt para IA → Geração de código → Revisão humana → Refina
 | v0.dev | Prototipação visual do dashboard |
 
 **A IA foi utilizada para:**
-- geração de endpoints
-- criação de componentes React
-- geração de queries SQL
-- revisão de código
+- Geração de endpoints
+- Criação de componentes React
+- Geração de queries SQL
+- Revisão de código
 
 > ⚠️ Todo código gerado foi **revisado manualmente** antes de ser aceito no projeto.
 
@@ -214,3 +218,37 @@ Dashboard React
 - [x] Níveis financeiros (Iniciante → Expert)
 - [x] Conquistas e recompensas
 
+---
+
+## 🛠️ Tecnologias
+
+| Camada         | Tecnologia            |
+|----------------|-----------------------|
+| Backend        | Node.js               |
+| Banco de Dados | Supabase (PostgreSQL) |
+| WhatsApp API   | Evolution API         |
+| Frontend       | React + Tailwind CSS  |
+| IA             | OpenAI API            |
+
+---
+
+## 📅 Cronograma
+
+| Fase   | Descrição                  | Data       |
+|--------|----------------------------|------------|
+| Fase 1 | Ideação e Estruturação     | 25/03/2026 |
+| Fase 2 | Arquitetura do Sistema     | 15/04/2026 |
+| Fase 3 | Construção do MVP          | 20/05/2026 |
+| Fase 4 | Entrega Final              | 27/05/2026 |
+
+---
+
+## 👩‍💻 Autora
+
+Desenvolvido por **Patrícia** — Projeto Acadêmico 2026
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença [MIT](LICENSE).
